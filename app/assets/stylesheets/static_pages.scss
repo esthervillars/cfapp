@@ -17,7 +17,10 @@ h1 {
 }
 
 .my-image {
-	display:block;
+	display:inline-block;
+	margin-bottom: 50px;
+	height: 200px;
+	width: 300px;
 }
 
 
@@ -26,9 +29,11 @@ h1 {
   background-color: black;
   width: 100%;
   bottom: 0;
-  position: absolute;
+  position: fixed;
 }
 
+
+
 .container .text-muted {
-	margin: 15px 0;
+	margin: 15px;
 }
