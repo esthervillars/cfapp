@@ -1,36 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<div class="header">
+  <h1>Bikes for Sale</h1>
+  <p>
+    Welcome to my folding bike shop.
+  </p>
+</div> <!-- /header -->
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container-fluid">
+  <div class="row">
     <% @products.each do |product| %>
-      <tr :class => "crazy">
-        <h2 :class => "loco"><%= product.name %></h2>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-sm-2 col-md-4">
+        <h2><%= product.name %></h2>
+        <p><%= product.colour %></p>
+        <%= image_tag("racingbike.png", class:"img-responsive my-image") %>
+        <p><%= product.description %></p>
+        <p><strong> $ <%= product.price %></strong></p>
+      </div><!-- /col -->
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
+
 
 <br>
 
 <%= link_to 'New Product', new_product_path %>
-<% paragraph_number = 1 %>
-<% 5.times do %>
-    <p>This is paragraph number <%= paragraph_number %></p>
-    <% paragraph_number = paragraph_number + 1 %>
-<% end %>
