@@ -20,7 +20,7 @@
   <%if @products.present? %>
   	<% @products.each do |product| %>
   		 <div class="item<%= " active" if product == @products.first %>">
-  		 <%= image_tag(product.image_url, class: "img-resposive") %>
+  		 <%= image_tag(product.image_url, class: "img-resposive") if product.image_url.present? %>
       <div class="carousel-caption">
         <%= product.name %>
       </div>
