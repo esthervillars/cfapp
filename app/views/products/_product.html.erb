@@ -5,9 +5,12 @@
         <h2><%= product.name %></h2>
         <p><%= product.colour %></p>
         <p><%= product.image_url %></p>
-        <%= image_tag(product.image_url, class: "img-responsive") %>
+        <%= image_tag(product.image_url, class: "img-resposive") if product.image_url.present? %>
         <p><%= product.description %></p>
         <p><strong> $ <%= product.price %></strong></p>
+        <%= link_to 'Edit', edit_product_path(product) %>
+        <%= link_to 'Show', product %>
+        <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?'} %>
         
       </div><!-- /col -->
     <% end %>
