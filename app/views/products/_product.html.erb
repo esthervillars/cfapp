@@ -1,10 +1,9 @@
 <!-- This partial displays the panels on the product page -->
-<div class="row">
-    <% @products.each do |product| %>
+    
       <div class="col-sm-2 col-md-4">
         <h2><%= product.name %></h2>
         <p><%= product.colour %></p>
-        <p><%= product.image_url %></p>
+        
         <%= image_tag(product.image_url, class: "img-resposive my-image") if product.image_url.present? %>
         <p><%= product.description %></p>
         <p><strong> $ <%= product.price %></strong></p>
@@ -13,5 +12,3 @@
         <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?'} %>
         
       </div><!-- /col -->
-    <% end %>
-</div>
