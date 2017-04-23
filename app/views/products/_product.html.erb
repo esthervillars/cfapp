@@ -5,7 +5,7 @@
         <h2><%= product.name %></h2>
         <p><%= product.colour %></p>
         <p><%= product.image_url %></p>
-        <%= image_tag(product.image_url, class: "img-resposive") if product.image_url.present? %>
+        <%= image_tag(product.image_url, class: "img-resposive my-image") if product.image_url.present? %>
         <p><%= product.description %></p>
         <p><strong> $ <%= product.price %></strong></p>
         <%= link_to 'Edit', edit_product_path(product) %>
