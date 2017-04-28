@@ -28,6 +28,88 @@ h1 {
 	width: 250px;
 }
 
+/* nav bar */
+nav {
+   clear: both;
+   background-color: #aeaca8;
+   height: 120px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 40 px;
+}
+nav li a {
+   color: #ffffff;
+}	
+nav li a:hover, nav li a.current {
+	color: #000000;
+}
+
+.navbar-header, .nav-bar-header>a{
+  	font-family: 'Fjalla One', sans-serif;
+  	font-size: 1.6em;
+  	color: #eb7d2c;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+.navbar-header>a:hover {
+	color: orange;
+	text-decoration: none;
+	background-color: white;
+	
+}
+
+.navbar-default .navbar-nav {
+	margin-top: 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	font-family: Roboto, Futura, sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #22adb7;
+}
+
+ul.navbar-right {
+	margin: 10px;
+}
+
+// begin search form
+
+.navbar-form {
+	text-transform: uppercase;
+	font-family: Roboto, Futura, sans-serif;
+	margin-top: 0px;
+}
+
+.search-for {
+	display: inline-block;
+	color: #808080;
+	font-size: 0.7em;
+}
+
+.search-button {
+	background-color: white;
+	border-color: #e4dfdf;
+	border-style: double;
+}
+
+.form-control {
+	width:100%;
+	position: relative;
+}
+
+.search-button:hover {
+	color: #22adb7;
+}
+
+// end search form
 
 .footer {
   height: 50px; 
