@@ -32,8 +32,6 @@
 		  			<li><%= link_to "Products", products_path %></li>
             <li><%= link_to "About", static_pages_about_path %></li>
 		  			<li><%= link_to "Contact", static_pages_contact_path %></li>
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
   				</ul>
           <!-- begin search form -->
           <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
@@ -41,7 +39,7 @@
             <%= text_field_tag(:q, "", class:"form-control", placeholder:"Search Products", size:"15", id:"search-field") %>
             <%= submit_tag("Search", class: "btn btn-default") %>
           <% end %> <!-- end search form -->
-          <ul class="nav- pull-right">
+          <ul class="nav navbar-nav navbar-right">
             <li>
             <% if user_signed_in? %>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
@@ -54,6 +52,17 @@
   		</div><!-- /.container-fluid -->
 
   	</nav>
+
+    <% if notice %>
+      <div id="notice-wrapper">
+        <p class="alert alert-success"><%= notice %></p>
+      </div>
+    <% end %>
+    <% if alert %>
+      <div id="notice-wrapper">
+        <p id="notice-wrapper" class="alert alert-danger"><%= alert %></p>
+      </div>
+    <% end %>
 
     <%= yield %>
 
