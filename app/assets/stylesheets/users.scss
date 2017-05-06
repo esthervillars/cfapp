@@ -5,31 +5,12 @@
 
 // begin devise/registrations/new.html.erb
 
-.form-signin-heading {
-	text-align: center;
+.heading {
+	
+  	font-weight: normal;
+  	font-family: Impact,Charcoal,sans-serif;
+  	color: #004d80;
+ 	 
 }
-#sign-up-form {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 50px;
-}
-
-#sign-up-form .field {
-	margin-top: 20px;
-}
-
-.field>label {
-	margin-top: 30px;
-	font-size: 1.15em;
-}
-
-.field>em {
-	color: #844784;
-	font-family: Roboto, Futura, sans-serif;
-}
-
-
 
 // end devise/registrations/new.html.erb
