@@ -32,13 +32,13 @@
 		  			<li><%= link_to "Products", products_path %></li>
             <li><%= link_to "About", static_pages_about_path %></li>
 		  			<li><%= link_to "Contact", static_pages_contact_path %></li>
-  				</ul>
-          <!-- begin search form -->
-          <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
-            <%= label_tag(:q, "", class: "search-for") %>
-            <%= text_field_tag(:q, "", class:"form-control", placeholder:"Search Products", size:"15", id:"search-field") %>
-            <%= submit_tag("Search", class: "btn btn-default") %>
-          <% end %> <!-- end search form -->
+  				  <!-- begin search form -->
+            <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
+              <%= label_tag(:q, "", class: "search-for") %>
+              <%= text_field_tag(:q, "", class:"form-control", placeholder:"Search Products", size:"15", id:"search-field") %>
+              <%= submit_tag("Search", class: "btn btn-default") %>
+            <% end %> <!-- end search form -->
+          </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
             <% if user_signed_in? %>
