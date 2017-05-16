@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.4.1'
 # gem 'capistrano-rails', group: :development
 gem 'devise'
 gem 'cancancan', '~> 1.10'
+gem 'ratyrate'
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
