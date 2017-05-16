@@ -28,16 +28,17 @@ h1 {
 	width: 250px;
 }
 
+
 /* nav bar */
 nav {
    clear: both;
    background-color: #aeaca8;
-   height: 120px;
+   height: 80px;
 }
 
 nav li {
 	display: inline-block;
-	margin-right: 40 px;
+	
 }
 nav li a {
    color: #ffffff;
@@ -48,7 +49,7 @@ nav li a:hover, nav li a.current {
 
 .navbar-header, .nav-bar-header>a{
   	font-family: 'Fjalla One', sans-serif;
-  	font-size: 1.6em;
+  	font-size: 1.5em;
   	color: #eb7d2c;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -64,7 +65,7 @@ nav li a:hover, nav li a.current {
 }
 
 .navbar-default .navbar-nav {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -77,8 +78,10 @@ nav li a:hover, nav li a.current {
 }
 
 ul.navbar-right {
-	margin: 10px;
+	margin: 0;
+	position: relative;
 }
+
 
 // begin search form
 
