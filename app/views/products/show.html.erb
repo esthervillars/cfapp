@@ -31,6 +31,16 @@
        </p>
     </div>
   </div>
+
+ 
+      <div class="col-sm-12">
+        <%= render "new_comment" %>
+        <%= render 'comments' %>
+
+      </div>      
+  
+    
+
     <%= @product.comments.order(rating: :desc).first %>
     <%= @product.comments.rating_desc.first %>
     <%= @product.highest_rating_comment %>
