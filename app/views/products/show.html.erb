@@ -1,7 +1,7 @@
-<div class="container">
+
 <p id="notice"><%= notice %></p>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <p>
         <strong>Name:</strong>
         <%= @product.name %>
@@ -30,14 +30,14 @@
         <div class="rated" data-score="<%= @product.average_rating %>"></div>
        </p>
     </div>
-  </div>
+ 
 
  
-      <div class="col-sm-12">
+      <div class="col-md-6">
         <%= render "new_comment" %>
         <%= render 'comments' %>
 
-      </div>      
+      </div>
   
     
 
@@ -47,6 +47,6 @@
 
       <%= link_to 'Edit', edit_product_path(@product), class:'btn vtn-primary' %> |
       <%= link_to 'Back', products_path, class:'btn btn-primary' %>
-  </div>
-</div>
+
+   </div>
 
