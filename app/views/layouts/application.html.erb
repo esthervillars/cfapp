@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -46,7 +46,8 @@
                 <li><%= link_to "Sign in",new_user_session_path %></li>
               <% end %> 
             </ul>
-          
+         </div>
+
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
 
@@ -61,7 +62,8 @@
       <div class="flash-notices">
           <p class="notice text-info"><%= notice %></p>
           <p class="alert text-danger"><%= alert %></p>
-        </div><!-- flash-notices -->
+      </div><!-- flash-notices -->
+
     <% end %>
 
     <%= yield %>
