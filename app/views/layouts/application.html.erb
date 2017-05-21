@@ -58,9 +58,10 @@
       </div>
     <% end %>
     <% if alert %>
-      <div id="notice-wrapper">
-        <p id="notice-wrapper" class="alert alert-danger" role="alert"><%= alert %></p>
-      </div>
+      <div class="flash-notices">
+          <p class="notice text-info"><%= notice %></p>
+          <p class="alert text-danger"><%= alert %></p>
+        </div><!-- flash-notices -->
     <% end %>
 
     <%= yield %>
