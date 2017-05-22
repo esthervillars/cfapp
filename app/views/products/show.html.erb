@@ -6,6 +6,7 @@
         <strong>Name:</strong>
         <%= @product.name %>
       </p>
+      
 
       <p>
         <strong>Description:</strong>
@@ -27,7 +28,7 @@
       	<%= @product.price %>
       </p>
       <p>Average Rating: 
-        <div class="rated" data-score="<%= @product.average_rating %>"></div>
+        <div class="star-rating" data-score="<%= @product.average_rating %>"></div>
        </p>
     </div>
  
@@ -35,18 +36,26 @@
  
       <div class="col-md-6">
         <%= render "new_comment" %>
-        <%= render 'comments' %>
+        <%= render "comments" %>
+
 
       </div>
   
     
 
-    <%= @product.comments.order(rating: :desc).first.body %>
-    <%= @product.comments.rating_desc.first.body %>
-    <%= @product.highest_rating_comment.body %>
 
       <%= link_to 'Edit', edit_product_path(@product), class:'btn vtn-primary' %> |
       <%= link_to 'Back', products_path, class:'btn btn-primary' %>
 
    </div>
+
+<script>
+  $('.star-rating').raty({
+    path: '/assets/',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+</script>
 
