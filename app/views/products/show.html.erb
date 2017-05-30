@@ -41,34 +41,3 @@
       <%= link_to 'Back', products_path, class:'btn btn-primary' %>
 
    </div>
-
-<script>
-  $('.rating').raty({
-    path: '/assets',
-    score: function() {
-      return $(this).attr('data-score');
-    }
-  });
-</script>
-
-<script>
-  $('.rated').raty({
-    path: '/assets',
-    readOnly: true,
-    score: function() {
-      return $(this).attr('data-score');
-    }
-  });
-</script>
-
-<script>
-  $('.average-rated').raty({
-    path: '/assets',
-    readOnly: true,
-    score: function() {
-      return $(this).attr('data-score');
-    }
-  });
-</script>
-
-
