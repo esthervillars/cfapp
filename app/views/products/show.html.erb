@@ -6,8 +6,7 @@
         <strong>Name:</strong>
         <%= @product.name %>
       </p>
-      
-
+     
       <p>
         <strong>Description:</strong>
         <%= @product.description %>
@@ -28,7 +27,7 @@
       	<%= @product.price %>
       </p>
       <p>Average Rating: 
-        <div class="rating" data-score=<%= @product.average_rating %>></div>
+        <div class="rated" data-score="<%= @product.average_rating %>"></div>
        </p>
     </div>
  
@@ -42,4 +41,34 @@
       <%= link_to 'Back', products_path, class:'btn btn-primary' %>
 
    </div>
+   
+<script>
+  $('.rating').raty({
+    path: '/assets/',
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+</script>
+
+<script>
+  $('.rated').raty({
+    path: '/assets/',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+</script>
+
+<script>
+  $('.average-rated').raty({
+    path: '/assets/',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+</script>
+
 
