@@ -33,9 +33,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
+# Use CanCanCan for user authorisation
 gem 'cancancan', '~> 1.10'
 gem 'jquery-turbolinks'
-
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
 
 
 group :development, :test do
