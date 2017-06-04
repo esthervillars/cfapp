@@ -1,0 +1,271 @@
+/* line 5, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/products.scss */
+.productname {
+  color: #b80b03;
+  text-decoration: none;
+}
+/*
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 18px;
+  margin: 33px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+label {
+  display: block;
+}
+*/
+/* line 5, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #F5F5F1;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0px 30px;
+}
+
+/* line 15, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  text-alignment: center;
+}
+
+/* line 22, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .container-fluid {
+  background-color: #b80b03;
+}
+/* line 24, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .container-fluid .navbar-nav > li > i {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Roboto, Futura, sans-serif;
+}
+
+/* line 34, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-header {
+  font-size: 1.5em;
+}
+
+/* line 39, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.my-image {
+  display: inline-block;
+  margin-bottom: 50px;
+  height: 180px;
+  width: 200px;
+}
+
+/* nav bar */
+/* line 48, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav {
+  clear: both;
+  background-color: #aeaca8;
+  height: 80px;
+}
+
+/* line 54, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav li {
+  display: inline-block;
+}
+
+/* line 58, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav li a {
+  color: #ffffff;
+}
+
+/* line 61, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav li a:hover, nav li a.current {
+  color: #000000;
+}
+
+/* line 65, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-header, .nav-bar-header > a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5em;
+  color: #eb7d2c;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* line 75, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-header > a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/* line 82, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav {
+  margin-top: 15px;
+}
+
+/* line 86, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  font-family: Roboto, Futura, sans-serif;
+  color: #ffffff;
+}
+
+/* line 92, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #22adb7;
+}
+
+/* line 96, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+ul.navbar-right {
+  margin: 0;
+  position: relative;
+}
+
+/* line 104, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-form {
+  text-transform: uppercase;
+  font-family: Roboto, Futura, sans-serif;
+  margin-top: 0px;
+}
+
+/* line 110, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.search-for {
+  display: inline-block;
+  color: #808080;
+  font-size: 0.7em;
+}
+
+/* line 116, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.search-button {
+  background-color: white;
+  border-color: #e4dfdf;
+  border-style: double;
+}
+
+/* line 122, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  width: 100%;
+  position: relative;
+}
+
+/* line 127, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.search-button:hover {
+  color: #22adb7;
+}
+
+/* line 133, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer {
+  height: 50px;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+/* line 142, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/static_pages.scss */
+.container .text-muted {
+  margin: 15px;
+}
+/* line 8, /Users/apichartsittisomsub/nameofapp/app/assets/stylesheets/users.scss */
+.heading {
+  font-weight: normal;
+  font-family: Impact,Charcoal,sans-serif;
+  color: #004d80;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
