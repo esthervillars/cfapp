@@ -1,14 +1,18 @@
 <!-- This partial displays the panels on the product page -->
     
-      <div class="col-sm-2 col-md-4">
-        <h2><%= product.name %></h2>
-        <p><%= product.colour %></p>
-        
+<div class="col-md-3">
+  <div class="thumbnail">
+    <div class="caption">
+        <h3><%= link_to product.name, product, class: "productname" %></h3>
+           
         <%= image_tag(product.image_url, class: "img-resposive my-image") if product.image_url.present? %>
-        <p><%= product.description %></p>
-        <p><strong> $ <%= product.price %></strong></p>
-        <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Show', product %>
-        <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?'} %>
         
-      </div><!-- /col -->
+        <p><%= product.description %></p>
+        <p><strong><%= product.price %></strong></p>
+        <%= link_to 'Edit', edit_product_path(product), class: "btn btn-link" %>            
+        <%= link_to 'Show', product, class: "btn btn-link" %>
+         <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-link" %>
+    </div>
+  </div>
+</div><!-- /col -->
+  

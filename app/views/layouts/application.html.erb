@@ -34,7 +34,7 @@
             <!-- begin search form -->
             <%= form_tag("/products", method: "get", class: "navbar-form navbar-left") do %>
               <%= label_tag(:q, "", class: "search-for") %>
-              <%= text_field_tag(:q, "", class:"form-control", placeholder:"Search Products", size:"10", id:"search-field") %>
+              <%= text_field_tag(:q, "", class:"form-control", placeholder:"Search Products", size:"12", id:"search-field") %>
               <%= submit_tag("Search", class: "btn btn-default") %>
             <% end %> <!-- end search form -->
               <% if user_signed_in? %>
