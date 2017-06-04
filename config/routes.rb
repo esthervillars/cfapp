@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
-  resource :users
+  devise_for :users, controllers: { registrations: "user_registrations" }
   
   get 'static_pages/about'
 
