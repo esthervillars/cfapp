@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
-  devise_for :users
+  devise_for :users, controllers: { registrations: "user_registrations" }
   resources :products do
     resources :comments
   end
-  devise_for :users, controllers: { registrations: "user_registrations" }
   
   get 'static_pages/about'
 
