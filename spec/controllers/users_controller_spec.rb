@@ -2,12 +2,13 @@ require 'rails_helper'
 
 describe UsersController, type: :controller do
 
-  let(:user) { User.create!(email: 'peter@example.com', password: '1234567890') }
+  @user = User.create!(email: 'peter@example.com', password: '1234567890')
+  @user2 = User.create!(email: 'sam@example.com', password: '0987654321')
 
   describe 'GET #show' do
      context 'when a user is logged in' do
      	before do
-     		sign_in user1
+     		sign_in @ user1
      end
      	it "load correct user details" do
      		get:show, params: {id: user1.id}
