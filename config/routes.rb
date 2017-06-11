@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'payments/create'
+
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users, controllers: { registrations: "user_registrations" }
   resources :products do
