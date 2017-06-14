@@ -40,6 +40,7 @@ gem 'jquery-turbolinks'
 gem 'will_paginate', '~> 3.1.0'
 gem 'rails-controller-testing'
 gem 'stripe'
+gem "brakeman", :require => false
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
