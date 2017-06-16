@@ -4,7 +4,6 @@
     <div class="col-md-6">
       <p>
         <h3><%= @product.name %></h3>
-        
       </p>
      
       <p>
@@ -12,7 +11,7 @@
         <%= @product.description %>
       </p>
       <div class="thumbnail">
-        <%= image_tag(@product.image_url) %>
+        <%= image_tag(@product.image_url, width: "350", class: "img-zoom") %>
       </div
 
       <p>
