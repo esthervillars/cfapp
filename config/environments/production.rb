@@ -48,6 +48,17 @@ Rails.application.configure do
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
+  
+  # Use a different cache store in production.
+  config.cache_store = :dalli_store,
+                    (ENV["MEMCACHIER_SERVERS"] || "").split(","),
+                    {:username => ENV["MEMCACHIER_USERNAME"],
+                     :password => ENV["MEMCACHIER_PASSWORD"],
+                     :failover => true,
+                     :socket_timeout => 1.5,
+                     :socket_failure_delay => 0.2,
+                     :pool_size => 5
+                    }            
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
@@ -70,6 +81,7 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  # Use a different cache store in production.
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'

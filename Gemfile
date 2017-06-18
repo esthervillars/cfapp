@@ -42,6 +42,11 @@ gem 'rails-controller-testing'
 gem 'stripe'
 gem "brakeman", :require => false
 
+# Use dalli for memcached caching
+gem 'dalli'
+# Enable connection pooling
+gem 'connection_pool'
+
 group :development, :test do
 # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.11'
@@ -50,8 +55,6 @@ group :development, :test do
 end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
   # Use RSpec for testing
   gem 'rspec-rails', '~> 3.5'
   gem "factory_girl_rails", "~> 4.0"

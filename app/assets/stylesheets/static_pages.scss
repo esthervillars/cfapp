@@ -31,11 +31,6 @@ h1 {
 	}
 }
 
-.navbar-header, {
-	font-size: 1.5em,
-}
-
-
 .my-image {
 	display:inline-block;
 	margin-bottom: 50px;
@@ -65,7 +60,7 @@ nav li a:hover, nav li a.current {
 .navbar-header, .nav-bar-header>a{
   	font-family: 'Fjalla One', sans-serif;
   	font-size: 1.5em;
-  	color: #eb7d2c;
+  	color: #111111;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	margin-right: 20px;
@@ -75,7 +70,6 @@ nav li a:hover, nav li a.current {
 .navbar-header>a:hover {
 	color: orange;
 	text-decoration: none;
-	
 	
 }
 
