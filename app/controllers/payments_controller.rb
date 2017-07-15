@@ -1,4 +1,5 @@
 class PaymentsController < ApplicationController
+  
   def create
   	token = params[:stripeToken]
   	@product = Product.find(params[:product_id])

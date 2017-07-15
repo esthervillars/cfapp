@@ -7,7 +7,6 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  get 'payments/create'
 
   post 'payments/create'
   
