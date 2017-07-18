@@ -49,6 +49,8 @@ gem 'connection_pool'
 # Use redis for performance
 gem 'redis-rails'
 
+gem 'simplecov', group: :test, require: false
+
 group :development, :test do
 # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.11'

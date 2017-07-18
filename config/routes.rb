@@ -3,12 +3,11 @@ Rails.application.routes.draw do
 
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users, controllers: { registrations: "user_registrations" }
+  # Add path for users
+  resources :users
   resources :products do
     resources :comments
   end
-
-
-  post 'payments/create'
   
   get 'static_pages/about'
 
@@ -17,6 +16,8 @@ Rails.application.routes.draw do
   get 'static_pages/index'
 
   post 'static_pages/thank_you'
+
+  post 'payments/create'
 
   mount ActionCable.server => '/cable'
 
