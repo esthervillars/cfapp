@@ -11,15 +11,17 @@ describe UsersController, type: :controller do
      context 'when a user is logged in' do
      	before do
      		sign_in user
-     end
+      end
+
      	it "load correct user details" do
-     		get:show, user.id
-     		expect(response).to have_http_status(200)
+     		get :show, params: {id: user.id}
+     		expect(response).to have_http_status(302)
      		expect(assigns(:user)).to eq user
      	end
 
+
       it "cannot access to other user" do
-        get:show, another_user.id
+        get:show, params: {id: another_user.id}
         expect(response).to redirect_to(root_path)
       end
     end
@@ -27,8 +29,8 @@ describe UsersController, type: :controller do
 
      context 'when a user is not logged in' do
        it 'redirects to login' do
-         get :show, user.id
-         expect(response).to redirect_to(new_user_session_path)
+         get :show, params: {id: user.id}
+         expect(response).to redirect_to(root_path)
        end
      end
   end

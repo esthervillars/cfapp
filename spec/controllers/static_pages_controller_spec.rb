@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+
 describe StaticPagesController, type: :controller do
   context 'GET #index' do
     before do
